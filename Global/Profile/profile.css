@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body Background */
+body {
+    background: linear-gradient(to right, #283c86, #45a247);
+    color: white;
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Section */
+header {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    background-color: #3db43f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: background 0.2s ease;
+}
+
+nav ul li a:hover {
+    background-color: #283c86;
+}
+
+/* Main Container */
+.server-container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    margin: 120px auto 40px; /* Add margin to account for the fixed header */
+    padding-bottom: 50px;
+    padding-right: 50px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Room</title>
+    <link rel="stylesheet" href="EnglishRoom.css">
+    <script>
+        // Function to handle Quit button click
+        function confirmQuit() {
+            const confirmation = confirm("Are you sure you want to leave?");
+
+            if (confirmation) {
+                // Redirect to server page (replace 'server.html' with the actual server page URL)
+                window.location.href = "EnglishServer.html";
+            } else {
+                // Stay on the current page
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">STUENT</div>
+            <ul>
+                <li><a onclick="confirmQuit()">Quit</a></li>
+                <li><a>Rules</a></li>
+                <li><a>Report</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        
+        <!-- First Row: 2 divs (3:1 ratio) -->
+        <div class="div-container">
+            <div class="large-div">
+                <h1>Question Board</h1>
+            </div>
+            <div class="small-div">
+            </div>
+        </div>
+
+        <!-- Second Row: 2 divs (1:1 ratio) -->
+        <div class="div-container">
+            <div class="half-div" id="AB">
+                <h1 id="h">Answer Box</h1>
+            </div>
+            <div class="half-div" id="CB"></div>
+        </div>
+
+    </div>
+
+</body>
+</html>
